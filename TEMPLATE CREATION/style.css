@@ -1,0 +1,256 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+
+}
+.one{
+    height:450vh;
+    background-color:white;
+} 
+.up{
+    background-color:brown;
+    height:10px;
+}
+.boat{
+    height:300px;
+    background-color: rgb(128, 173, 233);
+    background-image: url(./background1.jpg);
+    background-repeat: no-repeat;
+    z-index:-1;
+    margin-top: 20px;
+    background-size: cover;
+}
+.h11{
+    color: rgb(10, 11, 10) !important;
+    padding-left:10px !important;
+    padding-top:110px !important;
+    z-index:1 !important;
+    margin-left: 300px !important;
+    color:white !important;
+    font-size :40px !important;
+}
+.images{
+    border:1px solid black;
+    border-radius: 110px;
+    height:100px;
+    width:100px;
+}
+.flex{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow:hidden;
+    column-gap: 80px;
+    margin: 100px;
+    margin-left: 450px;
+    margin-top:10px;
+   padding:30px;
+}
+.dec{
+    border:2px solid black;
+}
+.dec:hover{
+    box-shadow: 5px 5px 5px  black;
+}
+.grid{
+    display:grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    column-gap:150px;
+    row-gap: 10px;
+    margin: 20px;
+    margin-left: 350px;
+    margin-top: -40px;
+    cursor: pointer;
+}
+.grid img{
+     height: 250px;
+     width: 200px;
+     border:2px solid black;
+    border-radius: 200px;
+}
+#gridfour img{
+    margin-left: 250px;
+    width:350px;
+    height:350px;
+}
+.grid1 img:hover{
+    box-shadow: 5px 5px 5px black;
+    box-shadow: outset;
+}
+#gridfour:hover{
+    box-shadow: none;
+}
+.box1,.box2{
+    margin-left:20px;
+    margin-top: 30px;
+    border: 2px solid black;
+    border-radius: 30px;
+    background-image: url(./w1.jpeg);
+    height:200px;
+    width:300px;
+    overflow: hidden;
+    background-size:150px;
+    background-repeat: no-repeat;
+    background-position-y:center;
+    background-position-x: right;
+}
+.box{
+    display: flex;
+    gap:30px;
+    margin-left: 450px; 
+}
+.box img{
+    float: right;
+}
+.box2:hover{
+    box-shadow: 5px 5px 5px black;
+}
+.box1:hover{
+    box-shadow: 5px 5px 5px black;
+}
+.para{
+    clear: right;
+    padding-top:60px;
+    margin-top: -40px;
+}
+.white{
+    background-image: url(./logo.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position-x:center !important;
+    height:90px;
+}
+.linkses{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+    align-content: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight:bold;
+    font-size:small;
+    background-color:rgb(112, 34, 34);
+}
+a:hover{
+    background-color:white;
+    color: rgb(16,26,6);
+}
+.white:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+button{
+    background-color:rgb(112, 34, 34);
+    padding:5px;
+    border:none;
+    border-radius: 20px;
+    margin-left: 500px;
+    margin-top: 40px;
+    color: white;
+    width:150px;
+    height:60px;
+    cursor: pointer;
+}
+.h21{
+    text-align: center;
+}
+.picks{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap:100px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+.pickups{
+    height:150px;
+    width:130px;
+    border:1px solid black;
+    border-radius: 20px;
+}
+.picks img{
+    height:150px;
+    width:130px;
+    border-radius: 20px;
+}
+.pickups img:hover{
+        height: 100px;
+        width:100px;
+}
+#gridfour img{
+    border: none;
+    padding-left:60px;
+}
+.brands{
+    display: inline;
+    margin-left:10px;
+    margin-top: -80px;
+}
+.brands img{
+    height:150px;
+    width:150px;
+    padding:60px;
+    object-fit: fill;
+}
+.brands img:hover{
+    opacity: 0.8;
+    transform: skew(10deg);
+    height:200px;
+    width:200px;
+}
+.brand{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 350px;
+}
+.updates img{
+    height:150px;
+    width:150px;
+    border: 2px solid black;
+}
+.update{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+   gap:15px;
+   margin-top: 20px;
+}
+.updates{
+    border: 2px solid black;
+}
+.updates img:hover{
+    height:200px;
+    width:200px;
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: black;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(rgb(232, 127, 127) ,lavender,rgb(34, 177, 34));
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-image: linear-gradient(red,orange,greenyellow);
+}
+.copy{
+    margin:30px;
+    text-align: center;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+h2:hover{
+    color: brown;
+}
+h1:hover{
+    color: brown;
+}
