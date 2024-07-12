@@ -1,0 +1,100 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADDITION MULTIPLICATION</title>
+    <style>
+        .sub{
+            height:400px;
+            width:400px;
+            background-color: rgb(182, 121, 7);
+            border: 2px solid black;
+            border-radius: 30px;
+            margin:auto;
+            margin-top:10%;
+        }
+        input[type="number"]
+        {
+            display: block;
+            margin: auto;
+            margin-top: 30px;
+        }
+        .func img{
+            height:30px;
+            width:30px;
+            margin-left: 110px;
+            margin-top:40px;
+        }
+        #result{
+            background-color: brown;
+            width:fit-content;
+            border: none;
+            border-radius: 10px;
+            margin-left:180px;
+        }
+        .res{
+            transition: 3s;
+        }
+        #result:hover{
+            transform: scale(2);
+            padding:4px;
+        }
+        .func img:hover{
+            height:50px;
+            width:50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sub">
+            <h3>ADDITION AND MULTIPLICATION</h3>
+        <input type="number" id="number1">
+        <input type="number" id="number2">
+        <div class="func">
+       <img  src="./plus.png" onclick="add()">
+       <img  src="./minus.png" onclick="min()">
+       <img  src="./mul.png" onclick="mul()">
+       <img  src="./divide.png" onclick="div()">
+        </div>
+        <div class="res">
+        <p id="result"></p>
+        </div>
+        </div>
+    </div>
+    <script>
+        function add()
+        {
+            let num1=parseInt(document.getElementById("number1").value);
+            let num2=parseInt(document.getElementById("number2").value);
+            let allresult=num1+num2;
+            document.getElementById("result").innerText=`Result:${allresult}`
+        }
+        function min()
+        {
+            let num1=parseInt(document.getElementById("number1").value);
+            let num2=parseInt(document.getElementById("number2").value);
+            let allresult=num1-num2;
+            document.getElementById("result").innerText=`Result:${allresult}`
+        }
+        function mul()
+        {
+            let num1=parseInt(document.getElementById("number1").value);
+            let num2=parseInt(document.getElementById("number2").value);
+            let allresult=num1*num2;
+            document.getElementById("result").innerText=`Result:${allresult}`
+        }
+        function div()
+        {
+            let num1=parseInt(document.getElementById("number1").value);
+            let num2=parseInt(document.getElementById("number2").value);
+            let allresult=num1/num2;
+            document.getElementById("result").innerText=`Result:${allresult}`
+        }
+
+
+
+    </script>
+</body>
+</html>
